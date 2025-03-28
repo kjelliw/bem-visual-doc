@@ -1,0 +1,29 @@
+{
+  "name": "bem-visual-doc",
+  "version": "0.0.1",
+  "description": "bem-visual-doc",
+  "main": "generate-docs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node generate-docs.js test/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kjelliw/bem-visual-doc.git"
+  },
+  "keywords": [
+    "bem",
+    "documentation"
+  ],
+  "author": "Kjell Iwarsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjelliw/bem-visual-doc/issues"
+  },
+  "homepage": "https://github.com/kjelliw/bem-visual-doc#readme",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "postcss": "^8.4.31",
+    "postcss-safe-parser": "^6.0.0"
+  }
+}
