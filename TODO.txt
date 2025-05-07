@@ -1,0 +1,17 @@
+* Uncaught ReferenceError: can't access lexical declaration 'cssVariables' before initialization
+    <anonymous> file:///C:/Dev/hiq/Spelinspektionen/Spelinspektionen.Web/docs/index.html:13323
+
+* Search doesn't work anymore.
+
+* Tooltip doesn't work for basic elements anymore, I think it used to work.
+
+* Tooltip needs to have higher z-index?
+
+* Tooltips get clipped by left side and details/summary container.
+
+* Can't keep tooltip open for scrolling.
+
+* Remove the width limit on the variables grid style.
+
+* Have a section that groups visually similar styles? Would that be useful? Or have the exact same prop/attrs.
+

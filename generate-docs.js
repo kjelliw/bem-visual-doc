@@ -406,12 +406,21 @@ async function generateDocs() {
         ${renderBemSection()}
         
         <script>
-            // Populate CSS variables from the CSS file
+        // First, include the script content directly
+        ${searchFilterScript}
+        
+        // Then populate the CSS variables after the script has loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Populate CSS variables from the CSS file after script initialization
             ${Array.from(cssVars.entries()).map(([name, value]) => 
                 `cssVariables.set('${name}', '${value.replace(/'/g, "\\'")}');`
             ).join('\n')}
             
-            ${searchFilterScript}
+            // Explicitly call initialization
+            if (typeof initializeAll === 'function') {
+                initializeAll();
+            }
+        });
         </script>
     </body>
     </html>`;
